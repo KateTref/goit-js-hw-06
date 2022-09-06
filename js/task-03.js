@@ -15,7 +15,7 @@ const images = [
 
 const listEl = document.querySelector('.gallery');
 
-const makeItems = images.map(({url, alt}) => `<li class="item"><img src = "${url}" width=600 alt = "${alt}"/></li>`)
+const makeItems = images.map(({url, alt}) => `<li class="item"><img src = "${url}" width=400 alt = "${alt}"/></li>`)
   .join(' ');
 
 
