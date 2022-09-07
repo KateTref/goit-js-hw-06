@@ -9,8 +9,10 @@ function checkQuantitySymbols(event) {
 
     if (currentLength === Number(inputElLength)) {
         inputEl.classList.add('valid');
+        inputEl.classList.remove('invalid');
     }
     else {
         inputEl.classList.add('invalid');
+        inputEl.classList.remove('valid');
     }
 }
