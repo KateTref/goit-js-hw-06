@@ -6,9 +6,9 @@ const getQuantityElem = function () {
 
 console.log(`Number of categories:`, getQuantityElem());
 
-for (const elem of arrItemsEl) {
+arrItemsEl.forEach (function(elem) {
     const elemHeadEl = elem.querySelector('h2');
     console.log(`Category:`, elemHeadEl.textContent);
     const arrElements = elem.querySelectorAll('li');
     console.log(`Elements:`, arrElements.length); 
-};
+});
